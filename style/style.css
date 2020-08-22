@@ -1,0 +1,21 @@
+/*
+hello Aditya
+*/
+.wrapper {
+  width: 100%;
+  max-width: 1366px;
+  min-height: 100vh;
+}
+
+.wrapper header {
+  width: 100%;
+  height: 55px;
+  background-color: red;
+}
+
+.container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
