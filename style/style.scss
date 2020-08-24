@@ -121,7 +121,41 @@ hello Aditya
             .content-area{
                 grid-area: c;
                 min-height: 5em;
-                background-color: green;
+                .content-container{
+                    width: 100%;
+                    height: 20em;
+                    overflow: hidden;
+                    border: 1px solid #000;
+                    padding: 2px;
+                    display: grid;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                    grid-template-areas: "l l l l l l a a a a a a";
+                    .latest-post{
+                        grid-area: l;
+                        height: 100%;
+                        .latest-post-img{
+                            width: 100%;
+                            height: 70%;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .latest-post-content{
+                            width: 100%;
+                            height: 30%;
+                        }
+                    }
+
+                    .main-alt-post{
+                        grid-area: a;
+                        height: 100%;
+                    
+                        background-color: red;
+                    }
+                }
             }
             .sidebar-section{
                 grid-area: s;
