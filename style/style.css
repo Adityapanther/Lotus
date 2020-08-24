@@ -20,7 +20,7 @@ hello Aditya
 
 .wrapper header {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: white;
 }
 
@@ -54,7 +54,7 @@ hello Aditya
 .wrapper header .topNav-section .top-nav ul li a {
   color: #fff;
   font-family: 'Domine', serif;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 1vw;
   letter-spacing: 1px;
 }
@@ -65,9 +65,10 @@ hello Aditya
 
 .wrapper header .main-header {
   width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: #ffffff;
-  border-bottom: 0.5px solid #000000;
+  -webkit-box-shadow: 0px 1px 3px #cecece;
+          box-shadow: 0px 1px 3px #cecece;
 }
 
 .wrapper header .main-header .logo-section {
@@ -86,7 +87,7 @@ hello Aditya
 }
 
 .wrapper header .main-header .logo-section .logo {
-  width: 80%;
+  width: 55%;
   height: 100%;
 }
 
@@ -117,8 +118,8 @@ hello Aditya
 .wrapper header .main-header .mainNav-section ul li a {
   font-family: 'Patua One', cursive;
   text-transform: uppercase;
-  font-size: 1.2vw;
-  font-weight: bold;
+  font-size: 1.4vw;
+  font-weight: 400;
   color: #000000;
   letter-spacing: 1px;
 }
@@ -127,8 +128,50 @@ hello Aditya
   border-bottom: 2px solid #000000;
 }
 
+.wrapper .content-section {
+  width: 100%;
+  min-height: 25em;
+}
+
+.wrapper .content-section .main-area {
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "c c c c c c c c . s s s" "f f f f f f  f f f f f f";
+}
+
+.wrapper .content-section .main-area .content-area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: c;
+  min-height: 5em;
+  background-color: green;
+}
+
+.wrapper .content-section .main-area .sidebar-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-area: s;
+  min-height: 20em;
+  background-color: yellow;
+}
+
+.wrapper .content-section .main-area .footer-section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: f;
+  height: 2em;
+  background-color: pink;
+}
+
 .container {
   width: 98%;
+  min-height: inherit;
   height: 100%;
   margin: 0 auto;
 }
