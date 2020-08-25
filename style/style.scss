@@ -125,18 +125,19 @@ hello Aditya
                     width: 100%;
                     height: 20em;
                     overflow: hidden;
-                    border: 1px solid #000;
+                    border: 1px solid #cecece;
                     padding: 2px;
                     display: grid;
                     border-top-left-radius: 3px;
                     border-top-right-radius: 3px;
-                    grid-template-areas: "l l l l l l a a a a a a";
+                    grid-template-areas: "l l a a a a a a a a a a";
                     .latest-post{
                         grid-area: l;
-                        height: 100%;
+                        height: inherit;
+                        padding: 5px;
                         .latest-post-img{
                             width: 100%;
-                            height: 70%;
+                            height: 80%;
 
                             img{
                                 width: 100%;
@@ -146,14 +147,53 @@ hello Aditya
                         .latest-post-content{
                             width: 100%;
                             height: 30%;
+
+                            .latest-p-content-title{
+                                width: 90%;
+                                margin: 0 20px;
+                                overflow: hidden;
+                                h1{
+                                    font-size: 1.3vw;
+                                    font-family: 'PT Serif', serif;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.5px;
+                                    max-lines: 2;
+                                }
+                            }
+
+                            .latest-post-content-data{
+                                width: 50%;
+                                height: 20px;
+                                line-height: 20px;
+                                display: flex;
+                                flex-direction: row;
+                                flex-flow: wrap;
+                                padding-left: 20px;
+                                text-align: center;
+
+                                .latest-post-auther{
+                                    
+                                    p{
+                                        letter-spacing: 0.5px;
+                                        font-weight: 500;
+                                        font-size: 1vw;
+                                    }
+                                }
+
+                                .latest-post-date{
+                                    margin-left: 5px;
+                                    p{
+                                        font-weight: 200;
+                                        font-size: 0.8vw;
+                                    }
+                                }
+                            }
                         }
                     }
 
                     .main-alt-post{
                         grid-area: a;
                         height: 100%;
-                    
-                        background-color: red;
                     }
                 }
             }
