@@ -145,17 +145,29 @@ hello Aditya
   grid-area: content-area;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "pc pc pc pc pc pc pc pc . sc sc sc";
+      grid-template-areas: "pc pc pc pc pc pc pc pc pc sc sc sc";
   -ms-grid-rows: minmax(90vh, auto);
       grid-template-rows: minmax(90vh, auto);
+  grid-column-gap: 1em;
 }
 
 .wrapper .main-area .content-area .post-section {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
+  -ms-grid-column-span: 9;
   grid-area: pc;
   background-color: red;
+}
+
+.wrapper .main-area .content-area .post-section .latest-post-area {
+  width: 100%;
+  border: 1px solid #cecece;
+  height: 20em;
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .wrapper .main-area .content-area .sidebar-section {

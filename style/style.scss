@@ -120,11 +120,29 @@ hello Aditya
         .content-area{
             grid-area: content-area;
             display: grid;
-            grid-template-areas: "pc pc pc pc pc pc pc pc . sc sc sc";
+            grid-template-areas: "pc pc pc pc pc pc pc pc pc sc sc sc";
             grid-template-rows: minmax(90vh, auto);
+            grid-column-gap: 1em;
             .post-section{
                 grid-area: pc;
                 background-color: red;
+
+                .latest-post-area{
+                    width: 100%;
+                    border: 1px solid #cecece;
+                    height: 20em;
+                    background-color: #ffffff;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .current-post{
+
+                    }
+
+                    .alt-post{
+
+                    }
+                }
             }
 
             .sidebar-section{
