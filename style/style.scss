@@ -107,6 +107,38 @@ hello Aditya
         }
     }
 
+    .main-area{
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        padding-top: 20px;
+        grid-template-areas: "content-area"
+        "footer";
+        grid-template-rows: minmax(90vh,auto) minmax(1em, 3em);
+
+
+        .content-area{
+            grid-area: content-area;
+            display: grid;
+            grid-template-areas: "pc pc pc pc pc pc pc pc . sc sc sc";
+            grid-template-rows: minmax(90vh, auto);
+            .post-section{
+                grid-area: pc;
+                background-color: red;
+            }
+
+            .sidebar-section{
+                grid-area: sc;
+                background-color: blue;
+            }
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: #125102;
+        }
+    }
+
 }
 
 .container{
