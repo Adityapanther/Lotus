@@ -3,21 +3,78 @@ hello Aditya
 */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Domine&family=PT+Serif:ital,wght@0,400;1,700&family=Patua+One&display=swap');
+
+
 *,html,body{
-    margin: 0;
     padding: 0;
+    margin: 0;
     text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
     font-size: 16px;
-    display: block;
+    list-style-type: none;
+
 }
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
 .wrapper{
     width: 100%;
     max-width: 1366px;
-    min-height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75px minmax(100vh, auto) 25px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+    "main"
+    "footer";
 
+    header{
+        grid-area: header;
+        background: #000;
+
+        .second-nav{
+            width: 100%;
+            height: 40%;
+            background-color: blue;
+            overflow: hidden;
+
+            .second-nav-items{
+                width: 60%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                ul{
+                    display: inline-flex;
+
+                    li{
+                        margin-right: 20px;
+                        a{
+                            font-family: domine;
+                            letter-spacing: 0.5px;
+                            color: white;
+                            font-size: 1vw;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        grid-area: main;
+        background-color: green;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: red;
+    }
 }
+
 
 .container{
     width: 98%;

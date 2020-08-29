@@ -3,20 +3,89 @@ hello Aditya
 */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Domine&family=PT+Serif:ital,wght@0,400;1,700&family=Patua+One&display=swap");
 *, html, body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   text-decoration: none;
-  list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-size: 16px;
-  display: block;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .wrapper {
   width: 100%;
   max-width: 1366px;
-  min-height: 100vh;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 75px minmax(100vh, auto) 25px;
+      grid-template-rows: 75px minmax(100vh, auto) 25px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+      grid-template-areas: "header" "main" "footer";
+}
+
+.wrapper header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: #000;
+}
+
+.wrapper header .second-nav {
+  width: 100%;
+  height: 40%;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.wrapper header .second-nav .second-nav-items {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.wrapper header .second-nav .second-nav-items ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.wrapper header .second-nav .second-nav-items ul li {
+  margin-right: 20px;
+}
+
+.wrapper header .second-nav .second-nav-items ul li a {
+  font-family: domine;
+  letter-spacing: 0.5px;
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.wrapper .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-color: green;
+}
+
+.wrapper footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: red;
 }
 
 .container {
