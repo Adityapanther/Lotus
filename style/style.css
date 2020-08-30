@@ -218,6 +218,7 @@ body {
 .wrapper .main .main-container .content-section .latest-post-section .current-post-item-container .current-post-item-title h1 {
   color: #000;
   max-lines: 1;
+  text-overflow: ellipsis;
   font-size: 1.5vw;
   letter-spacing: 0.3px;
 }
@@ -255,10 +256,42 @@ body {
   font-size: 0.9vw;
 }
 
-.wrapper .main .main-container .content-section .latest-post-section .alt-post-item-container {
+.wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: apic;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  overflow: hidden;
+}
+
+.wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "x" " y";
+}
+
+.wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-item-img {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: x;
+}
+
+.wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details {
+  grid-area: b;
 }
 
 .wrapper .main .main-container .sidebar-section {
