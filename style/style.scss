@@ -313,6 +313,25 @@ body{
                     }
                 }
 
+                .other-post-section{
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 25em;
+
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-areas: "l r";
+
+
+                    .left-other-post-section{
+                        grid-area: l;
+                    }
+
+                    .right-other-post-section{
+                        grid-area: r;
+                    }
+                }
+
             }
 
             .sidebar-section {
