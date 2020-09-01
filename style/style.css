@@ -275,6 +275,7 @@ body {
   height: 100%;
   padding: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-item-img {
@@ -299,13 +300,14 @@ body {
   width: 100%;
   height: 30%;
   overflow: hidden;
-  border-bottom: 1px solid red;
+  border-bottom: 0.5px solid #9c9c9c;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details .alt-post-title h1 {
   font-size: 1.3vw;
   font-weight: bold;
   letter-spacing: 0.3px;
+  text-overflow: ellipsis;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details .alt-post-description {
@@ -318,6 +320,8 @@ body {
   font-family: dm sans;
   font-weight: 300;
   font-size: 1vw;
+  color: #494949;
+  text-overflow: ellipsis;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details .alt-post-info {
@@ -336,9 +340,11 @@ body {
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details .alt-post-info .alt-post-auther p {
+  font-size: 0.7vw;
   font-weight: bolder;
   letter-spacing: 0.5px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item .alt-post-details .alt-post-info .alt-post-date {
@@ -350,6 +356,7 @@ body {
   color: #747474;
   font-weight: 300;
   font-size: 0.8vw;
+  text-transform: uppercase;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item:hover {

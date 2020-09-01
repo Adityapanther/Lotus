@@ -224,6 +224,7 @@ body{
                             height: 100%;
                             padding: 5px;
                             overflow: hidden;
+                            cursor: pointer;
 
                             .alt-post-item-img{
                                 width: 50%;
@@ -245,11 +246,12 @@ body{
                                     width: 100%;
                                     height: 30%;
                                     overflow: hidden;
-                                    border-bottom: 1px solid red;
+                                    border-bottom: 0.5px solid rgb(156, 156, 156);
                                     h1{
                                         font-size: 1.3vw;
                                         font-weight: bold;
                                         letter-spacing: 0.3px;
+                                        text-overflow: ellipsis;
                                      }
                             }
                                 .alt-post-description{
@@ -260,6 +262,8 @@ body{
                                     font-family: dm sans;
                                     font-weight: 300;
                                     font-size: 1vw;
+                                    color: rgb(73, 73, 73);
+                                    text-overflow: ellipsis;
                                 }
                             }
                                 .alt-post-info{
@@ -272,9 +276,11 @@ body{
                                     .alt-post-auther{
                                         float: left;
                                         p{
+                                            font-size: 0.7vw;
                                             font-weight: bolder;
                                             letter-spacing: 0.5px;
                                             color: #000000;
+                                            text-transform: uppercase;
                                         }
                                     }
                                     .alt-post-date{
@@ -284,6 +290,7 @@ body{
                                             color: #747474;
                                             font-weight: 300;
                                             font-size: 0.8vw;
+                                            text-transform: uppercase;
                                         }
                                     }
                                 }
@@ -294,6 +301,7 @@ body{
                             box-shadow: 1px 2px 3px #cecece,
                             0px -2px 3px #cecece;
                             border-radius: 3px;
+
                         }
                     }
                 }
