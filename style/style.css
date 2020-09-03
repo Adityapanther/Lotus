@@ -378,7 +378,7 @@ body {
 .wrapper .main .main-container .content-section .other-post-section {
   margin-top: 20px;
   width: 100%;
-  height: 25em;
+  min-height: 25em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -390,6 +390,63 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: l;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section {
+  width: 100%;
+  height: 30em;
+  line-height: 100%;
+  padding: 10px 5px;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-heading {
+  width: 100%;
+  height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-heading .post-tag-title {
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-heading .post-tag-title a {
+  font-size: 1.3vw;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-heading .border-line {
+  width: 70%;
+  float: left;
+  height: 5px;
+  background-color: #000;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 0px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .right-other-post-section {
