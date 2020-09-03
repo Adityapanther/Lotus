@@ -193,6 +193,7 @@ body {
   grid-area: cpic;
   padding: 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .current-post-item-container .current-post-item-img {
