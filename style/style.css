@@ -452,7 +452,7 @@ body {
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container {
   width: 100%;
   height: 10em;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   padding: 4px;
   overflow: hidden;
 }
@@ -473,12 +473,14 @@ body {
   height: 100%;
   float: left;
   padding-left: 10px;
+  border-radius: 3px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-title {
   width: 100%;
-  height: 30%;
+  height: 25%;
   overflow: hidden;
+  border-bottom: 0.5px solid #000;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-title h1 {
@@ -489,13 +491,14 @@ body {
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-desciption {
   width: 100%;
-  height: 50%;
+  height: 55%;
   overflow: hidden;
+  padding-top: 5px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-desciption p {
   text-overflow: ellipsis;
-  color: #eec0c0;
+  color: #5a5a5a;
   font-size: 1vw;
 }
 
@@ -511,6 +514,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 5px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-details .item-data-auther p {
@@ -520,11 +524,18 @@ body {
   text-transform: uppercase;
 }
 
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-details .item-data-date {
+  margin-left: 10px;
+}
+
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-details .item-data-date p {
-  margin-left: 3px;
   font-size: 0.9vw;
   font-weight: 300;
   color: #747474;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container:hover {
+  cursor: pointer;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .right-other-post-section {
