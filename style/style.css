@@ -394,7 +394,7 @@ body {
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section {
   width: 100%;
-  height: 30em;
+  min-height: 30em;
   line-height: 100%;
   padding: 10px 5px;
 }
@@ -447,14 +447,20 @@ body {
   width: 100%;
   min-height: 100px;
   padding: 20px 0px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 8px;
+  -ms-grid-rows: (minmax(100px, 1fr))[3];
+      grid-template-rows: repeat(3, minmax(100px, 1fr));
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container {
   width: 100%;
   height: 10em;
-  background-color: #f8f8f8;
+  background-color: #f8f8f8f0;
   padding: 4px;
   overflow: hidden;
+  border-radius: 3px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-thumbnail {
@@ -473,7 +479,6 @@ body {
   height: 100%;
   float: left;
   padding-left: 10px;
-  border-radius: 3px;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container .item-data-title {
@@ -534,8 +539,28 @@ body {
   color: #747474;
 }
 
-.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container .item-data-container:hover {
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-post-items .tag-post-item-container:hover {
   cursor: pointer;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 3px #cecece, -1px -1px 3px #cecece;
+          box-shadow: 1px 1px 3px #cecece, -1px -1px 3px #cecece;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-more-content {
+  width: 100%;
+  height: 3em;
+  padding-right: 10px;
+}
+
+.wrapper .main .main-container .content-section .other-post-section .left-other-post-section .other-post-tag-section .tag-more-content a {
+  float: right;
+  color: #221fdb;
+  border-radius: 3px;
+  font-size: 1.2vw;
+  font-style: oblique;
+  text-decoration: underline;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .wrapper .main .main-container .content-section .other-post-section .right-other-post-section {
