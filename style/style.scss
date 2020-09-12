@@ -376,13 +376,15 @@ body{
             float: left;
 
             p{
-                font-size: 1.5vw;
-                font-weight: 600;
+                font-size: 1.4vw;
+                font-weight: 300;
                 color: #ffffff;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
 
-        .footer-link-area{
+        .footer-menu-link-area{
             width: 80%;
             height: 100%;
             display: flex;

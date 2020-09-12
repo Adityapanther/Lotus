@@ -451,12 +451,14 @@ body {
 }
 
 .wrapper footer .copyright-area p {
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-size: 1.4vw;
+  font-weight: 300;
   color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.wrapper footer .footer-link-area {
+.wrapper footer .footer-menu-link-area {
   width: 80%;
   height: 100%;
   display: -webkit-box;
@@ -471,7 +473,7 @@ body {
   float: left;
 }
 
-.wrapper footer .footer-link-area ul {
+.wrapper footer .footer-menu-link-area ul {
   width: 100%;
   height: inherit;
   display: -webkit-box;
@@ -485,7 +487,7 @@ body {
           align-items: center;
 }
 
-.wrapper footer .footer-link-area ul li a {
+.wrapper footer .footer-menu-link-area ul li a {
   color: white;
   font-size: 0.9vw;
   font-weight: 600;
@@ -493,7 +495,7 @@ body {
   text-transform: uppercase;
 }
 
-.wrapper footer .footer-link-area ul li a:hover {
+.wrapper footer .footer-menu-link-area ul li a:hover {
   color: pink;
 }
 
