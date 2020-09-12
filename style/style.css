@@ -425,6 +425,68 @@ body {
   grid-area: sidebar-section;
   background-color: chartreuse;
   height: 100%;
+  -webkit-box-shadow: 1px 1px 5px #dedede;
+          box-shadow: 1px 1px 5px #dedede;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(100px, 250px);
+      grid-template-rows: minmax(100px, 250px);
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar {
+  width: 100%;
+  background-color: white;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-heading {
+  width: 100%;
+  height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-heading h3 {
+  font-size: 1.3vw;
+  color: white;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items ul {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (20px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 20px);
+  grid-row-gap: 5px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items ul li {
+  width: 100%;
+  overflow: hidden;
+  list-style-type: square;
+}
+
+.wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items ul li a {
+  color: #000000;
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-overflow: ellipsis;
 }
 
 .wrapper footer {
