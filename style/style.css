@@ -1,8 +1,10 @@
 /*
 hello Aditya
 */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Domine&family=PT+Serif:ital,wght@0,400;1,700&family=Patua+One&display=swap");
-*, html, body {
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=DM+Sans&family=Domine:wght@400;700&family=Fjalla+One&family=Patua+One&display=swap");
+*,
+html,
+body {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -228,6 +230,7 @@ body {
   font-size: 1.5vw;
   letter-spacing: 0.3px;
   text-overflow: ellipsis;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .current-post-item-container .current-post-item-description {
