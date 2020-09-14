@@ -515,7 +515,7 @@ body {
   float: left;
 }
 
-.wrapper footer .copyright-area p {
+.wrapper footer .copyright-area a {
   font-size: 1.4vw;
   font-weight: 300;
   color: #ffffff;
