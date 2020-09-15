@@ -36,8 +36,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  -webkit-box-shadow: 0px 3px 2px #cecece;
-          box-shadow: 0px 3px 2px #cecece;
+  border-bottom: 0.5px solid rgba(117, 117, 117, 0.418);
 }
 
 .wrapper header .second-nav {
