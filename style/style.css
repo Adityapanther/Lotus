@@ -500,6 +500,7 @@ body {
 
 .wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items ul li:hover {
   background-color: black;
+  cursor: pointer;
 }
 
 .wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-items ul li:hover a {
