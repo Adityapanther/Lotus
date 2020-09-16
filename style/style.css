@@ -36,7 +36,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  border-bottom: 0.5px solid rgba(117, 117, 117, 0.418);
 }
 
 .wrapper header .second-nav {
@@ -753,5 +752,18 @@ body {
   min-height: inherit;
   height: 100%;
   margin: 0 auto;
+}
+
+.border-bottom {
+  border-bottom: 0.5px solid rgba(117, 117, 117, 0.418);
+}
+
+.header-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: -2px 0px 3px 0px #cecece;
+          box-shadow: -2px 0px 3px 0px #cecece;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
