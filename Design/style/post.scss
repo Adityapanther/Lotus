@@ -1,0 +1,24 @@
+@import './foundation/root';
+@import './foundation/flex';
+@import './foundation/fonts';
+@import './foundation/container';
+
+@import './template/header';
+@import './template/post_section';
+@import './template/footer';
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1366px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 95px minmax(100vh, auto) 75px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+    "main-content"
+    "footer";
+    @include header();
+    @include postSection();
+    @include footer();
+}
