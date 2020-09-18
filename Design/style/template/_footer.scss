@@ -1,0 +1,53 @@
+@mixin footer {
+
+    footer {
+        grid-area: footer;
+        background-color: rgba(70, 32, 100, 0.74);
+        margin: 10px 0px;
+
+        .copyright-area {
+            width: 20%;
+            height: 100%;
+            @include flexCenter();
+            float: left;
+
+            a {
+                font-size: 1.4vw;
+                font-weight: 300;
+                color: #ffffff;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        .footer-menu-link-area {
+            width: 80%;
+            height: 100%;
+            @include flexHrStartCenter();
+            float: left;
+
+            ul {
+                width: 100%;
+                height: inherit;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                li {
+                    a {
+                        color: white;
+                        font-size: 0.9vw;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: rgb(252, 223, 228);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

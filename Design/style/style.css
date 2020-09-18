@@ -43,7 +43,9 @@ body {
       grid-template-rows: 95px minmax(100vh, auto) 75px;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
 }
 
 .wrapper header {
@@ -296,8 +298,10 @@ body {
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .current-post-item-container:hover {
-  -webkit-box-shadow: 1px 1px 3px #cecece, -1px -1px 3px #cecece;
-          box-shadow: 1px 1px 3px #cecece, -1px -1px 3px #cecece;
+  -webkit-box-shadow: 1px 1px 3px #cecece,
+ -1px -1px 3px #cecece;
+          box-shadow: 1px 1px 3px #cecece,
+ -1px -1px 3px #cecece;
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container {
@@ -403,8 +407,10 @@ body {
 }
 
 .wrapper .main .main-container .content-section .latest-post-section .alt-post-items-container .alt-post-item:hover {
-  -webkit-box-shadow: 1px 2px 3px #cecece, 0px -2px 3px #cecece;
-          box-shadow: 1px 2px 3px #cecece, 0px -2px 3px #cecece;
+  -webkit-box-shadow: 1px 2px 3px #cecece,
+ 0px -2px 3px #cecece;
+          box-shadow: 1px 2px 3px #cecece,
+ 0px -2px 3px #cecece;
   border-radius: 3px;
 }
 
@@ -466,7 +472,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-color: rgba(56, 73, 228, 0.705);
 }
 
 .wrapper .main .main-container .sidebar-section .popular-posts-sidebar .popular-posts-heading h3 {
@@ -740,8 +746,10 @@ body {
 
 .other-post-tag-section .tag-post-items .tag-post-item-container:hover {
   cursor: pointer;
-  -webkit-box-shadow: 2px 2px 8px #cecece, -2px -2px 8px #cecece;
-          box-shadow: 2px 2px 8px #cecece, -2px -2px 8px #cecece;
+  -webkit-box-shadow: 2px 2px 8px #cecece,
+ -2px -2px 8px #cecece;
+          box-shadow: 2px 2px 8px #cecece,
+ -2px -2px 8px #cecece;
 }
 
 .other-post-tag-section .tag-more-content {

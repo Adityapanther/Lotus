@@ -1,24 +1,16 @@
-/*
-Theme Name: Lotus
-Theme URI: https://adityapanter.github.io/lotus
-Author: Aditya Panther
-Author URI: https://adityapanther.github.io/
-Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
-Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.0
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 7.0
-License: apache 2.0 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: Lotus
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+@import './template/theme__information.scss';
+@include themeInfoComments();
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=DM+Sans&family=Domine:wght@400;700&family=Fjalla+One&family=Patua+One&display=swap');
 @import './foundation/fonts';
 @import './foundation/root';
 @import './foundation/flex';
+
+
+@import './template/header';
+@import './template/footer';
+
+
+
 
 .wrapper{
     width: 100%;
@@ -31,94 +23,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
     "main"
     "footer";
 
-    header{
-        grid-area: header;
+    @include header();
 
-
-        .second-nav{
-            width: 100%;
-            height: 30%;
-            background-color: rgb(19, 17, 17);
-            overflow: hidden;
-
-            .second-nav-items{
-                width: 60%;
-                height: 100%;
-                @include flexHrStartCenter();
-
-                ul{
-                    display: inline-flex;
-
-                    li{
-                        margin-right: 20px;
-                        a{
-                            font-family: domine;
-                            letter-spacing: 0.5px;
-                            color: white;
-                            font-size: 1vw;
-                            font-weight: bold;
-                        }
-
-                        a:hover {
-                            color: #eec0c0;
-                        }
-                    }
-
-                    
-                }
-            }
-        }
-
-        .header-main-area{
-            width: 100%;
-            height: 70%;
-            background-color: #ffffff;
-            overflow: hidden;
-            .logo-area{
-                width: 20%;
-                height: 100%;
-                float: left;
-                @include flexHrStartCenter();
-
-                .logo-container{
-                    width: 70%;
-                    height: 100%;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-            .main-nav-area{
-                width: 80%;
-                height: 100%;
-                float: left;
-
-                ul{
-                    height: 100%;
-                    @include flexHrStartCenter();
-
-                    li{
-                        margin-right: 25px;
-
-                        a{
-                            color: black;
-                            font-weight: 500;
-                            font-size: 1.5vw;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                        }
-
-                        &:hover {
-                            border-bottom: 2px solid black;
-                        }
-                    }
-
-                
-                }
-            }
-        }
-    }
     .main{
         grid-area: main;
 
@@ -366,7 +272,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
                         width: 100%;
                         height: 2.5em;
                         @include flexCenter();
-                        background-color: black;
+                        background-color: rgba(56, 73, 228, 0.705);
 
                         h3{
                             font-size: 1.3vw;
@@ -422,55 +328,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
         }
     }
 
-    footer{
-        grid-area: footer;
-        background-color: rgba(70, 32, 100, 0.74);
-        margin: 10px 0px;
-
-        .copyright-area{
-            width: 20%;
-            height: 100%;
-            @include flexCenter();
-            float: left;
-
-            a{
-                font-size: 1.4vw;
-                font-weight: 300;
-                color: #ffffff;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-            }
-        }
-
-        .footer-menu-link-area{
-            width: 80%;
-            height: 100%;
-            @include flexHrStartCenter();
-            float: left;
-
-            ul{
-                width: 100%;
-                height: inherit;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                li{
-                    a{
-                        color: white;
-                        font-size: 0.9vw;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
-                        text-transform: uppercase;
-
-                        &:hover{
-                            color: rgb(252, 223, 228);
-                        }
-                    }
-                }
-            }
-        }
-    }
+    @include footer();
 }
 
 
