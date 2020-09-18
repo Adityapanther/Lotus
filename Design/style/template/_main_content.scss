@@ -1,0 +1,315 @@
+@mixin mainContent {
+    .main {
+        grid-area: main;
+
+        .main-container {
+            width: inherit;
+            height: inherit;
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 75% 25%;
+            grid-column-gap: 20px;
+            grid-template-areas: "content-section sidebar-section";
+
+            .content-section {
+                grid-area: content-section;
+                height: 100%;
+                // border: 1px solid #eec0c0;
+
+                .latest-post-section {
+                    width: 100%;
+                    height: 22em;
+                    background-color: #fff;
+                    padding-bottom: 1em;
+
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 100%;
+                    grid-template-areas: "cpic apic";
+
+                    .current-post-item-container {
+                        grid-area: cpic;
+                        padding: 5px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .current-post-item-img {
+                            width: 100%;
+                            height: 70%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .current-post-item-title {
+                            width: 100%;
+                            min-height: 5%;
+                            max-height: 15%;
+                            margin-bottom: 3px;
+                            overflow: hidden;
+                            @include flexVrCenter();
+
+                            h1 {
+                                color: #000;
+                                max-lines: 1;
+                                text-overflow: ellipsis;
+                                font-size: 1.5vw;
+                                letter-spacing: 0.3px;
+                                text-overflow: ellipsis;
+                                font-family: $title;
+                            }
+                        }
+
+                        .current-post-item-description {
+                            width: 100%;
+                            height: 40px;
+                            overflow: hidden;
+
+                            P {
+                                text-overflow: ellipsis;
+                                font-size: 1.2vw;
+                                font-weight: 400;
+                                letter-spacing: 0.3px;
+                                color: #252525a6;
+                            }
+                        }
+
+                        .current-post-item-details {
+                            width: 100%;
+                            height: 5%;
+                            margin-top: 5px;
+                            @include flexVrCenter();
+                            flex-wrap: nowrap;
+                            flex-direction: row;
+
+
+                            .current-post-item-auther {
+                                margin-right: 20px;
+
+                                p {
+                                    color: #000;
+                                    font-weight: bold;
+                                    font-size: 0.9vw;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            .current-post-item-date {
+                                color: rgba(17, 15, 15, 0.678);
+                                font-weight: 300;
+                                font-size: 0.7vw;
+                                text-transform: capitalize;
+                            }
+
+                        }
+
+                        &:hover {
+                            box-shadow: 1px 1px 3px #cecece,
+                                -1px -1px 3px #cecece;
+                        }
+                    }
+
+                    .alt-post-items-container {
+                        grid-area: apic;
+                        display: grid;
+                        grid-template-rows: 50% 50%;
+                        overflow: hidden;
+                        padding: 5px 3px;
+                        grid-row-gap: 1px;
+
+
+
+                        .alt-post-item {
+                            width: 100%;
+                            height: 100%;
+                            padding: 5px;
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            .alt-post-item-img {
+                                width: 50%;
+                                height: 100%;
+                                float: left;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .alt-post-details {
+                                width: 50%;
+                                height: 100%;
+                                float: left;
+                                padding-left: 3px;
+
+                                .alt-post-title {
+                                    width: 100%;
+                                    height: 30%;
+                                    overflow: hidden;
+                                    border-bottom: 0.5px solid rgb(156, 156, 156);
+
+                                    h1 {
+                                        font-size: 1.3vw;
+                                        font-weight: bold;
+                                        letter-spacing: 0.3px;
+                                        text-overflow: ellipsis;
+                                    }
+                                }
+
+                                .alt-post-description {
+                                    width: 100%;
+                                    height: 50%;
+                                    overflow: hidden;
+
+                                    p {
+                                        font-family: dm sans;
+                                        font-weight: 300;
+                                        font-size: 1vw;
+                                        color: rgb(73, 73, 73);
+                                        text-overflow: ellipsis;
+                                    }
+                                }
+
+                                .alt-post-info {
+                                    width: 100%;
+                                    height: 20%;
+                                    @include flexVrCenter();
+
+
+                                    .alt-post-auther {
+                                        float: left;
+
+                                        p {
+                                            font-size: 0.7vw;
+                                            font-weight: bolder;
+                                            letter-spacing: 0.5px;
+                                            color: #000000;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+
+                                    .alt-post-date {
+                                        float: left;
+                                        margin-left: 5px;
+
+                                        p {
+                                            color: #747474;
+                                            font-weight: 300;
+                                            font-size: 0.8vw;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .alt-post-item:hover {
+                            box-shadow: 1px 2px 3px #cecece,
+                                0px -2px 3px #cecece;
+                            border-radius: 3px;
+
+                        }
+                    }
+                }
+
+                .other-post-section {
+                    margin-top: 20px;
+                    width: 100%;
+                    min-height: 25em;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    background-color: #f2f2f2;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-areas: "l r";
+
+
+                    .left-other-post-section {
+                        grid-area: l;
+                    }
+
+                    .right-other-post-section {
+                        grid-area: r;
+                    }
+                }
+
+            }
+
+            .sidebar-section {
+                grid-area: sidebar-section;
+                background-color: chartreuse;
+                height: 100%;
+                box-shadow: 1px 1px 5px #dedede;
+                display: grid;
+                grid-template-rows: minmax(100px, 350px) 200px;
+
+                .popular-posts-sidebar {
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: white;
+
+                    .popular-posts-heading {
+                        width: 100%;
+                        height: 2.5em;
+                        @include flexCenter();
+                        background-color: rgba(56, 73, 228, 0.705);
+
+                        h3 {
+                            font-size: 1.3vw;
+                            color: white;
+                        }
+                    }
+
+                    .popular-posts-items {
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            display: grid;
+                            grid-template-rows: repeat(auto-fill, 20px);
+                            grid-row-gap: 10px;
+                            padding: 5px 10px;
+                            overflow: hidden;
+
+                            li {
+                                width: 100%;
+                                height: 20px;
+                                overflow: hidden;
+                                padding: 0.5px 5px;
+                                border-radius: 3px;
+                                border: 0.5px solid rgba(134, 134, 134, 0.493);
+
+                                a {
+                                    color: #2d2e2e;
+                                    font-size: 1vw;
+                                    font-weight: 400;
+                                    letter-spacing: 1px;
+                                    text-overflow: ellipsis;
+                                    text-transform: uppercase;
+                                }
+
+                                &:hover {
+                                    background-color: black;
+                                    cursor: pointer;
+
+                                    a {
+                                        color: white;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
