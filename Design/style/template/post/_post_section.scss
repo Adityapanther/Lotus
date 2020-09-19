@@ -9,17 +9,28 @@
         .post-container{
             width: inherit;
             height: inherit;
+            padding: 0 1em;
 
             .post-heading{
-                width: 98%;
+                width: 100%;
                 min-height: 4em;
-                margin: 0 auto;
                 border-bottom: 0.5px solid rgba(104, 104, 104, 0.678);
                 @include flexVrCenter();
 
                 h1{
                     text-transform: uppercase;
                     letter-spacing: 0.5px;
+                }
+            }
+
+            .post-content{
+                padding: 1em 0 0 0;
+                p{
+                    line-height: 1.5em;
+                }
+
+                &:nth-child(1){
+                    margin-bottom: 10em;
                 }
             }
         }
