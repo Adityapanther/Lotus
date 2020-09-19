@@ -1,0 +1,21 @@
+@import './post_section';
+@import './sidebar_section';
+
+@mixin mainArea {
+    .main-area{
+        grid-area: main-area;
+        padding-top: 2em;
+
+        .main-section{
+            width: inherit;
+            height: inherit;
+            display: grid;
+            grid-template-columns: 9fr 1fr;
+            grid-column-gap: 20px;
+            grid-template-areas: "post-setion sidebar-section";
+            @include postSection();
+            @include sidebarSection();
+            background-color: grey;
+        }
+    }
+}

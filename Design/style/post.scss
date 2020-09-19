@@ -4,8 +4,9 @@
 @import './foundation/container';
 
 @import './template/header';
-@import './template/post_section';
+@import './template/post/main-area';
 @import './template/footer';
+
 
 
 .wrapper{
@@ -16,9 +17,9 @@
     grid-template-rows: 95px minmax(100vh, auto) 75px;
     grid-template-columns: 100%;
     grid-template-areas: "header"
-    "main-content"
+    "main-area"
     "footer";
     @include header();
-    @include postSection();
+    @include mainArea();
     @include footer();
 }
