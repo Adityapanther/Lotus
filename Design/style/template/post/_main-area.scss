@@ -16,7 +16,6 @@
             grid-template-areas: "post-section sidebar-section";
             @include postSection();
             @include sidebarSection();
-            background-color: grey;
         }
     }
 }

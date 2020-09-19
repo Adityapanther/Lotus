@@ -3,6 +3,26 @@
         grid-area: post-section;
         width: inherit;
         height: inherit;
-        background-color: #000;
+        background-color: #fff;
+
+
+        .post-container{
+            width: inherit;
+            height: inherit;
+
+            .post-heading{
+                width: 98%;
+                min-height: 4em;
+                margin: 0 auto;
+                border-bottom: 0.5px solid rgba(104, 104, 104, 0.678);
+                @include flexVrCenter();
+
+                h1{
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+
     }
 }
