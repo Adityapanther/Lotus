@@ -25,13 +25,22 @@
 
             .post-content{
                 padding: 1em 0 0 0;
-                p{
-                    line-height: 1.5em;
+
+                img{
+                    width: 100%;
+                    height: 25em;
                 }
 
-                &:nth-child(1){
-                    margin-bottom: 10em;
+                p{
+                    line-height: 1.5em;
+                    margin-bottom: 3em;
+
+                    &:last-child {
+                        margin-bottom: 0em;
+                    }
                 }
+
+                
             }
         }
 
