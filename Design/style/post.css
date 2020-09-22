@@ -238,7 +238,7 @@ p {
   font-size: 2vw;
   margin-top: 10px;
   margin-bottom: 15px;
-  text-transform: capitalize;
+  text-transform: none;
   word-wrap: break-word;
   word-break: break-all;
 }
