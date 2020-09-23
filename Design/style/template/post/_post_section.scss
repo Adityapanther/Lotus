@@ -56,6 +56,43 @@
 
                 
             }
+
+            .post-tags{
+                border: 1px;
+                width: 100%;
+                height: 5em;
+                @include flexVrCenterStart();
+
+                .tag-img{
+                    width: 5%;
+                    float: left;
+                }
+
+                .tag-items{
+                    width: 95%;
+                    height: inherit;
+                    float: left;
+
+                    ul{
+                        height: 100%;
+                        width: 100%;
+                        @include flexVrCenterStart();
+                        li{
+                            margin-left: 10px;
+                            padding: 5px 10px;
+                            border-radius: 2px;
+                            background-color: #000;
+                            a{
+                                color: white;
+                                text-transform: uppercase;
+                                font-size: 0.8vw;
+                                letter-spacing: 1px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

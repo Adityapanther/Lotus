@@ -30,3 +30,9 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+@mixin flexVrCenterStart {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
