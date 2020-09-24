@@ -326,6 +326,7 @@ p {
   width: 20%;
   height: 100%;
   float: left;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,6 +336,31 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .auther-details .auther-info .auther-pic {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  border: 2px solid #fad2d2;
+  overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .auther-details .auther-info .auther-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .auther-details .auther-info .auther-name p {
+  font-weight: bold;
+  font-size: 1.2vw;
+  letter-spacing: 0.5px;
 }
 
 .wrapper .main-area .main-section .post-section .post-container .auther-details .auther-social {
