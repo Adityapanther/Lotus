@@ -137,6 +137,20 @@
                     width: 80%;
                     height: 100%;
                     float: left;
+
+                    ul{
+                        width: inherit;
+                        height: inherit;
+                        @include flexVrCenter();
+                        justify-content: space-around;
+
+                        .icon{
+                            width: 4em;
+                            height: 4em;
+                            border-radius: 5px;
+                            background-color: pink;
+                        }
+                    }
                 }
             }
         }
