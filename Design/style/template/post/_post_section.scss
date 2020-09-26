@@ -97,6 +97,8 @@
             .auther-details{
                 width: 100%;
                 height: 10em;
+                border-radius: 3px;
+                box-shadow: 1px 1px 3px 1px #cecece;
 
                 .auther-info{
                     width: 20%;
@@ -151,6 +153,25 @@
                             background-color: pink;
                         }
                     }
+                }
+            }
+
+            .navigate-post-section{
+                width: 100%;
+                height: 15em;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100%;
+                grid-template-areas: "p n";
+
+                .prev-post-area{
+                    grid-area: p;
+                    @include flexCenter();
+                }
+
+                .next-post-area{
+                    grid-area: n;
+                    @include flexCenter();
                 }
             }
         }
