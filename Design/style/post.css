@@ -8,6 +8,7 @@ body {
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-style: none;
 }
 
 body {
@@ -548,7 +549,52 @@ p {
 
 .wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area {
   width: 100%;
+  min-height: 10em;
+  overflow: hidden;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .label {
+  width: 100%;
+  height: 2em;
+  margin-top: 0.5em;
+  font-size: 1.5vw;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .m-area {
+  width: 100%;
+  min-height: 2em;
+  overflow: hidden;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .m-area textarea {
+  width: 50%;
   height: 10em;
+  font-weight: 500;
+  font-size: 1.2vw;
+  border: 1px solid rgba(136, 136, 136, 0.582);
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .m-area .input {
+  width: 50%;
+  height: 2.5em;
+  border: 1px solid rgba(136, 136, 136, 0.582);
+  border-radius: 5px;
+  padding-left: 3px;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .m-area:last-child {
+  margin-top: 20px;
+}
+
+.wrapper .main-area .main-section .post-section .post-container .post-comments-section .post-comment-write-area .m-area:last-child .submit {
+  width: 90px;
+  height: 40px;
+  font-size: 1.2vw;
+  margin-left: 40%;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgba(107, 24, 103, 0.959);
 }
 
 .wrapper .main-area .main-section .sidebar-section {
