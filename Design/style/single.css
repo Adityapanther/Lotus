@@ -1,0 +1,25 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 16px;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 98%;
+  min-height: inherit;
+  height: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=single.css.map */
