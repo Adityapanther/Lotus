@@ -40,9 +40,18 @@ body {
   width: 100%;
   max-width: 1366px;
   min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 95px minmax(100vh, auto) 75px;
+      grid-template-rows: 95px minmax(100vh, auto) 75px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+      grid-template-areas: "header" "main-area" "footer";
 }
 
 .wrapper header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: header;
 }
 
