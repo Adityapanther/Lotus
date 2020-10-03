@@ -1,3 +1,5 @@
+@import './post-section';
+@import './sidebar-section';
 @mixin mainArea {
     .main-area {
         grid-area: main-area;
@@ -11,6 +13,9 @@
             grid-template-columns: 7.5fr 2.5fr;
             grid-column-gap: 30px;
             grid-template-areas: "post-section sidebar-section";
+
+            @include postSection();
+            @include sidebarSection();
             
         }
     }

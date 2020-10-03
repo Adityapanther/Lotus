@@ -1,0 +1,5 @@
+@mixin sidebarSection {
+    .sidebar-section{
+        grid-area: sidebar-section;
+    }
+}

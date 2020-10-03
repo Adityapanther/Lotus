@@ -184,6 +184,18 @@ body {
       grid-template-areas: "post-section sidebar-section";
 }
 
+.wrapper .main-area .main-section .post-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: post-section;
+}
+
+.wrapper .main-area .main-section .sidebar-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sidebar-section;
+}
+
 .wrapper footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
