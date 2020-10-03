@@ -165,6 +165,10 @@ body {
   border-bottom: 2px solid black;
 }
 
+.wrapper .main-section {
+  background-color: pink;
+}
+
 .wrapper footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

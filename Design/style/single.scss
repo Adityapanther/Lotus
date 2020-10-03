@@ -2,6 +2,7 @@
 @import '../style/foundation/container';
 @import '../style/foundation/flex';
 @import './template/header';
+@import './template/single-page/main-section';
 @import './template/footer';
 
 .wrapper{
@@ -15,5 +16,6 @@
     "main-area"
     "footer";
     @include header();
+    @include mainSection();
     @include footer();
 }
