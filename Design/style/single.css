@@ -165,8 +165,23 @@ body {
   border-bottom: 2px solid black;
 }
 
-.wrapper .main-section {
-  background-color: pink;
+.wrapper .main-area {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main-area;
+  padding-top: 2em;
+  background-color: #e2e2e2;
+}
+
+.wrapper .main-area .main-section {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7.5fr 2.5fr;
+      grid-template-columns: 7.5fr 2.5fr;
+  grid-column-gap: 30px;
+      grid-template-areas: "post-section sidebar-section";
 }
 
 .wrapper footer {
