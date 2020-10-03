@@ -2,6 +2,7 @@
 @import '../style/foundation/container';
 @import '../style/foundation/flex';
 @import './template/header';
+@import './template/footer';
 
 .wrapper{
     width: 100%;
@@ -14,4 +15,5 @@
     "main-area"
     "footer";
     @include header();
+    @include footer();
 }
