@@ -7,6 +7,11 @@
     width: 100%;
     max-width: 1366px;
     min-height: 100vh;
-
+    display: grid;
+    grid-template-rows: 95px minmax(100vh, auto) 75px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+    "main-area"
+    "footer";
     @include header();
 }
