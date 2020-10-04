@@ -170,7 +170,7 @@ body {
   -ms-grid-column: 1;
   grid-area: main-area;
   padding-top: 2em;
-  background-color: #e2e2e2;
+  background-color: #f3f3f3;
 }
 
 .wrapper .main-area .main-section {
@@ -188,6 +188,80 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: post-section;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px 20px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-rows: (300px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 300px);
+}
+
+.wrapper .main-area .main-section .post-section .post-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-thumbnail {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-data {
+  width: 100%;
+  height: 40%;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-data .item-title {
+  width: 100%;
+  min-height: 10%;
+  max-height: 35%;
+  margin-top: 3px;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-data .item-title h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  color: rgba(15, 12, 12, 0.911);
+  text-transform: capitalize;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-data .item-discription {
+  width: 100%;
+  min-height: 40%;
+  max-height: 55%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.wrapper .main-area .main-section .post-section .post-item .item-data .item-discription p {
+  width: 100%;
+  height: 100%;
+  font-size: 1.1vw;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  color: rgba(80, 80, 80, 0.918);
+}
+
+.wrapper .main-area .main-section .post-section .post-item:hover {
+  -webkit-box-shadow: 2px 2px 5px #cecece;
+          box-shadow: 2px 2px 5px #cecece;
 }
 
 .wrapper .main-area .main-section .sidebar-section {
