@@ -4,7 +4,7 @@
         display: grid;
         grid-gap: 10px 20px;
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        grid-template-rows: repeat(auto-fill, 150px);
+        grid-template-rows: repeat(auto-fill, 220px);
 
         .post-item{
             padding: 5px 10px;
@@ -12,8 +12,26 @@
             overflow: hidden;
             background-color: #fff;
 
-                
-            
+            .item-thumbnail{
+                width: 100%;
+                height: 60%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .item-data{
+                width: 100%;
+                height: 40%;
+
+                .item-title{
+                    h1{
+                        font-size: 1.2vw;
+                        font-weight: 500;
+                    }
+                }
+            }
 
             &:hover{
                 box-shadow: 2px 2px 5px #cecece;
