@@ -188,43 +188,84 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: post-section;
+}
+
+.wrapper .main-area .main-section .post-section .post-area-header {
+  width: 100%;
+  height: 3em;
+  background-color: pink;
+}
+
+.wrapper .main-area .main-section .post-section .post-area-header .header-item {
+  width: 15%;
+  height: 100%;
+  background-color: blue;
+}
+
+.wrapper .main-area .main-section .post-section .post-area {
+  width: 100%;
+  height: 100%;
+  margin-top: 3em;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px 20px;
-  -ms-grid-columns: (minmax(220px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  -ms-grid-rows: (220px)[auto-fill];
-      grid-template-rows: repeat(auto-fill, 220px);
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  -ms-grid-rows: (240px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 240px);
 }
 
-.wrapper .main-area .main-section .post-section .post-item {
+.wrapper .main-area .main-section .post-section .post-area .post-item {
   padding: 5px 10px;
   border-radius: 5px;
   overflow: hidden;
   background-color: #fff;
 }
 
-.wrapper .main-area .main-section .post-section .post-item .item-thumbnail {
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-thumbnail {
   width: 100%;
   height: 60%;
 }
 
-.wrapper .main-area .main-section .post-section .post-item .item-thumbnail img {
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-thumbnail img {
   width: 100%;
   height: 100%;
 }
 
-.wrapper .main-area .main-section .post-section .post-item .item-data {
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-data {
   width: 100%;
   height: 40%;
+  margin-top: 3px;
 }
 
-.wrapper .main-area .main-section .post-section .post-item .item-data .item-title h1 {
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-data .item-title {
+  min-height: 10%;
+  max-height: 40%;
+}
+
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-data .item-title h1 {
   font-size: 1.2vw;
-  font-weight: 500;
+  font-weight: 600;
+  color: rgba(43, 43, 43, 0.89);
 }
 
-.wrapper .main-area .main-section .post-section .post-item:hover {
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-data .item-description {
+  min-height: 20%;
+  height: 60%;
+  margin-top: 5px;
+}
+
+.wrapper .main-area .main-section .post-section .post-area .post-item .item-data .item-description p {
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+  color: rgba(77, 77, 77, 0.932);
+}
+
+.wrapper .main-area .main-section .post-section .post-area .post-item:hover {
   -webkit-box-shadow: 2px 2px 5px #cecece;
           box-shadow: 2px 2px 5px #cecece;
 }
