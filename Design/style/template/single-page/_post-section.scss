@@ -6,19 +6,42 @@
         .post-area-header{
             width: 100%;
             height: 3em;
-            background-color: pink;
+            background-color: #fff;
 
             .header-item{
                 width: 15%;
                 height: 100%;
-                background-color: blue;
+               background-color: #fff;
+
+                .header-item-left-area{
+                    width: 3%;
+                    height: inherit;
+                    float: left;
+                    background-color: black;
+                }
+                .header-item-right-area{
+                    width: 97%;
+                    height: inherit;
+                    float: left;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                        color: #000;
+                        letter-spacing: 0.5px;
+                        text-transform: capitalize;
+                    }
+                }
             }
         }
 
         .post-area{
             width: 100%;
             height: 100%;
-            margin-top: 3em;
+            margin: 2em 0em;
             display: grid;
             grid-gap: 10px 20px;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

@@ -193,19 +193,50 @@ body {
 .wrapper .main-area .main-section .post-section .post-area-header {
   width: 100%;
   height: 3em;
-  background-color: pink;
+  background-color: #fff;
 }
 
 .wrapper .main-area .main-section .post-section .post-area-header .header-item {
   width: 15%;
   height: 100%;
-  background-color: blue;
+  background-color: #fff;
+}
+
+.wrapper .main-area .main-section .post-section .post-area-header .header-item .header-item-left-area {
+  width: 3%;
+  height: inherit;
+  float: left;
+  background-color: black;
+}
+
+.wrapper .main-area .main-section .post-section .post-area-header .header-item .header-item-right-area {
+  width: 97%;
+  height: inherit;
+  float: left;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .main-area .main-section .post-section .post-area-header .header-item .header-item-right-area a {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 .wrapper .main-area .main-section .post-section .post-area {
   width: 100%;
   height: 100%;
-  margin-top: 3em;
+  margin: 2em 0em;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px 20px;
